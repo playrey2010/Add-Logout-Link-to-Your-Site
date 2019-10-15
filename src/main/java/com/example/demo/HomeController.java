@@ -60,4 +60,9 @@ public class HomeController {
         model.addAttribute("user", userRepository.findByUsername(username));
         return "secure";
     }
+
+    @RequestMapping("/logoutsuccessful")
+    public String logoutSuccessful() {
+        return "logout";
+    }
 }
